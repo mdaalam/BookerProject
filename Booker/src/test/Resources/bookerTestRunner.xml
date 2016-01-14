@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Booker App running on Firefox Browser">
+
+    <parameter name="useSauceLab" value="false"/>
+    <parameter name="userName" value="mdalam"/>
+    <parameter name="key" value="04837d50-6769-4ad4-9006-70d3f2a012f9"/>
+    <parameter name="appUrl" value="https://www.booker.com"/>
+    <parameter name="os" value="mac"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserVersion" value="43.0.4"/>
+
+    <test name="Home Page">
+        <classes>
+            <class name="BookerSignUpTest"/>
+            <class name="BookerSignInTest"/>
+            <class name="LikeBookerOnFacebookTest"/>
+            <class name="IntegratedCreditCardProcessingTest"/>
+        </classes>
+    </test>
+</suite>
